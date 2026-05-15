@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Portfolio</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="./assets/images/logo.png" alt="Logo" class="logo">
+    
+  </header>
+
+  <!-- Main Content -->
+  <div class="login-container">
+    <h2>Welcome Back</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <button type="submit">Login</button>
+    </form>
+    <p id="error-message" class="error"></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 BASITx.56 | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      
+      if (username === 'basit' && password === 'basit') {
+        window.location.href = 'index.html'; // Redirect to the portfolio
+      } else {
+        document.getElementById('error-message').textContent = 'Invalid username or password.';
+      }
+    });
+  </script>
+</body>
+</html>
