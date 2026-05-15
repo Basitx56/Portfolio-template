@@ -62,8 +62,8 @@ IICT PROJECT/
 2. Open `index.html` in your browser
 
 ```bash
-git clone https://github.com/Basitx56/<>.git
-cd <repo-name>
+git clone https://github.com/Basitx56/<portfolio-template>.git
+cd <portfolio-template>
 # Open index.html in your browser
 ```
 
